@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:phan_anh_do_thi/screens/home/components/hom_controller.dart';
+import 'package:phan_anh_do_thi/screens/reflects/reflects_screen.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({
@@ -79,6 +80,124 @@ class HomeBody extends StatelessWidget {
                 color: Colors.black87,
               ),
             ),
+          ),
+        ),
+        Container(
+          height: 300,
+          margin: EdgeInsets.all(20),
+          child: GridView.count(
+            crossAxisCount: 4,
+            crossAxisSpacing: 8.0,
+            mainAxisSpacing: 8.0,
+            children: [
+              Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ReflectScreen(),
+                            )
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.white,
+                        onPrimary: Colors.black87,
+                        padding: EdgeInsets.all(25.0),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20)
+                        )
+                      ),
+                      child: Icon(Icons.add_a_photo),
+                    ),
+                    SizedBox(height: 8.0),
+                    Text(
+                      'Phản ánh hiện trường',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.white,
+                        onPrimary: Colors.black87,
+                        padding: EdgeInsets.all(25.0),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)
+                        )
+                    ),
+                    child: Icon(Icons.add_a_photo),
+                  ),
+                  SizedBox(height: 8.0),
+                  Text(
+                    'Phản ánh hiện trường',
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.white,
+                        onPrimary: Colors.black87,
+                        padding: EdgeInsets.all(25.0),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)
+                        )
+                    ),
+                    child: Icon(Icons.add_a_photo),
+                  ),
+                  SizedBox(height: 8.0),
+                  Text(
+                    'Phản ánh hiện trường',
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.white,
+                        onPrimary: Colors.black87,
+                        padding: EdgeInsets.all(25.0),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)
+                        )
+                    ),
+                    child: Icon(Icons.add_a_photo),
+                  ),
+                  SizedBox(height: 8.0),
+                  Text(
+                    'Phản ánh hiện trường',
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+            ],
           ),
         )
       ],
